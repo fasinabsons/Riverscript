@@ -55,7 +55,7 @@ def calculate_sovereign_uae(price_per_gram, grams=8):
     base_price = price_per_gram * grams
     making_charges = base_price * 0.08  # 8% (average)
     subtotal = base_price + making_charges
-    vat = subtotal * 0.05  # 5%
+    vat = base_price * 0.05  # 5%
     total = subtotal + vat
     
     return {

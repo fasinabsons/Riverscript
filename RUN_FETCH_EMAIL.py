@@ -28,13 +28,13 @@ def main():
         # Display prices
         if 'joyalukkas' in data['sources']:
             ja = data['sources']['joyalukkas']
-            print(f"\n📍 Joy Alukkas (UAE):")
+            print(f"\n📍 Source A (UAE):")
             print(f"   24K: {ja['prices'].get('24k')} AED/gram")
             print(f"   22K: {ja['prices'].get('22k')} AED/gram")
         
         if 'candere' in data['sources']:
             ca = data['sources']['candere']
-            print(f"\n📍 Candere (Kerala, India):")
+            print(f"\n📍 Source B (Kerala, India):")
             print(f"   24K: ₹{ca['prices'].get('24k')}/10gm")
             print(f"   22K: ₹{ca['prices'].get('22k')}/10gm")
         

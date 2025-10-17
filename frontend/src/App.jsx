@@ -231,7 +231,7 @@ function App() {
             <div className="tab-content">
               <div className="card" style={{background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', color: 'white'}}>
                 <h2 style={{color: 'white'}}>🏅 KaratMeter Labs - Live Price Fetcher</h2>
-                <p style={{color: 'rgba(255,255,255,0.9)'}}>Fetch real-time gold prices from Joy Alukkas (UAE) and Candere (India)</p>
+                <p style={{color: 'rgba(255,255,255,0.9)'}}>Fetch real-time gold prices from UAE and India sources</p>
                 
                 <button 
                   className="btn btn-large" 
@@ -577,7 +577,7 @@ function App() {
                       checked={config.sources.joy_alukkas}
                       onChange={() => toggleSource('joy_alukkas')}
                     />
-                    <span>Joy Alukkas (UAE)</span>
+                    <span>Source A (UAE)</span>
                   </label>
 
                   <label className="checkbox-label">
@@ -595,7 +595,7 @@ function App() {
                       checked={config.sources.candere}
                       onChange={() => toggleSource('candere')}
                     />
-                    <span>Candere (India - Kerala)</span>
+                    <span>Source B (Kerala, India)</span>
                   </label>
 
                   <label className="checkbox-label">

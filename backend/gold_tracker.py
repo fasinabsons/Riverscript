@@ -1,6 +1,6 @@
 """
 Gold Price Tracker - Automated Multi-Source Price Fetcher
-Fetches gold prices from Kalyan Jewellers, Joy Alukkas, Bhima, and Candere
+Fetches gold prices from multiple gold sources
 Calculates custom duties and sends email notifications
 """
 
@@ -150,8 +150,8 @@ class GoldPriceTracker:
             return None
     
     def fetch_joy_alukkas_prices(self):
-        """Fetch prices from Joy Alukkas"""
-        print("\n📊 Fetching Joy Alukkas prices...")
+        """Fetch prices from Source A"""
+        print("\n📊 Fetching Source A prices...")
         
         try:
             driver = self.setup_driver()
@@ -183,7 +183,7 @@ class GoldPriceTracker:
                 driver.quit()
                 
                 if prices:
-                    print(f"   ✅ Joy Alukkas: 24K={prices.get('24k', 0)} AED, 22K={prices.get('22k', 0)} AED")
+                    print(f"   ✅ Source A: 24K={prices.get('24k', 0)} AED, 22K={prices.get('22k', 0)} AED")
                     self.prices['joy_alukkas'] = {
                         'prices': prices,
                         'currency': 'AED',
@@ -250,8 +250,8 @@ class GoldPriceTracker:
             return None
     
     def fetch_candere_prices(self):
-        """Fetch prices from Candere (India)"""
-        print("\n📊 Fetching Candere prices (India)...")
+        """Fetch prices from Source B (India)"""
+        print("\n📊 Fetching Source B prices (India)...")
         
         try:
             driver = self.setup_driver()
@@ -281,7 +281,7 @@ class GoldPriceTracker:
             driver.quit()
             
             if prices:
-                print(f"   ✅ Candere: 24K=₹{prices.get('24k', 0)}/10gm, 22K=₹{prices.get('22k', 0)}/10gm")
+                print(f"   ✅ Source B: 24K=₹{prices.get('24k', 0)}/10gm, 22K=₹{prices.get('22k', 0)}/10gm")
                 self.prices['candere'] = {
                     'prices': prices,
                     'currency': 'INR',
@@ -613,7 +613,7 @@ class GoldPriceTracker:
                         <th>22K (INR/10gm)</th>
                     </tr>
                     <tr>
-                        <td><strong>Candere</strong></td>
+                        <td><strong>Source B</strong></td>
                         <td>₹{prices.get('24k', 'N/A')}</td>
                         <td>₹{prices.get('22k', 'N/A')}</td>
                     </tr>
@@ -672,7 +672,7 @@ class GoldPriceTracker:
                         <th class="highlight">Total</th>
                     </tr>
                     <tr>
-                        <td><strong>Candere (Kerala)</strong></td>
+                        <td><strong>Source B (Kerala)</strong></td>
                         <td>₹{calc['base_price']}</td>
                         <td>₹{calc['making_charges']}</td>
                         <td>₹{calc['making_gst']}</td>
