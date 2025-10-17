@@ -43,7 +43,7 @@ class KaratMateLabs {
   /**
    * Fetch Source B prices
    */
-  async fetchSource B() {
+  async fetchSourceB() {
     console.log('\n📊 [KaratMate Labs] Fetching KaratMate India (Source B) prices...');
     
     try {
