@@ -4,8 +4,8 @@ echo   🏅 KaratMate Labs - Fetch Prices and Send Email
 echo ============================================================
 echo.
 echo This will:
-echo   1. Fetch live gold prices from Joy Alukkas and Candere
-echo   2. Calculate sovereign prices (8g and 16g)
+echo   1. Fetch live gold prices from UAE and India sources
+echo   2. Calculate sovereign prices (8g, 16g, and 20g)
 echo   3. Calculate customs duty (Red and Green channels)
 echo   4. Send complete email report with all calculations
 echo.
