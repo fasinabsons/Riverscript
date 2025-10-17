@@ -1,0 +1,20 @@
+# Gold Price Tracker - Backend Requirements
+
+# Web Framework
+Flask==3.0.0
+Flask-CORS==4.0.0
+
+# Web Scraping
+selenium==4.15.2
+beautifulsoup4==4.12.2
+lxml==4.9.3
+
+# Browser Driver
+webdriver-manager==4.0.1
+
+# HTTP Requests
+requests==2.31.0
+
+# Utilities
+python-dateutil==2.8.2
+

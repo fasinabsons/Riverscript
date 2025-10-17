@@ -1,0 +1,23 @@
+{
+    "sources": {
+        "kalyan": false,
+        "joy_alukkas": true,
+        "bhima": false,
+        "candere": true
+    },
+    "email": {
+        "sender": "fasin.absons@gmail.com",
+        "password": "zrxj vfjt wjos wkwy",
+        "recipient": "faseen1532@gmail.com",
+        "smtp_server": "smtp.gmail.com",
+        "smtp_port": 587
+    },
+    "calculations": {
+        "making_charges": 12,
+        "making_gst": 3,
+        "vat_gst": 5,
+        "customs_exemption": 50000,
+        "red_channel_rate": 6,
+        "green_channel_rate": 33
+    }
+}
